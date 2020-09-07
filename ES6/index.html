@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Object destructuring
+        let person = {
+            name: "Ironhacker",
+            age: 25,
+            favoriteMusic: "Metal",
+            address: {
+                street: 'García Luna',
+                code: 28220
+            }
+        };
+
+        const { name, age, favoriteMusic } = person
+        const { code } = person.address
+
+        console.log(`Hello, ${name}.`);
+        console.log(`You are ${age} years old.`);
+        console.log(`Your favorite music is ${favoriteMusic}.`);
+        console.log(`Your PC is ${code}.`)
+
+
+
+
+        // Array destructuring
+        const drinks = ['cacaolat', 'coca-cola', 'kas']
+
+        const [firstDrink, , thirdDrink] = drinks
+
+        console.log(firstDrink, thirdDrink)
+
+
+
+        // Spread operator
+
+
+        // REST parameters
+        const whatever = (...foods) => console.log(foods)
+
+        whatever('melon', 'caviar', 'ketchup')
+
+
+        // Array merging
+        const reptiles = ["snake", "lizard", "alligator"];
+        const mammals = ["puppy", "kitten", "bunny"];
+        const animals = [...mammals, 'gatitos', ...reptiles];
+        console.log(animals);
+
+
+    </script>
+</body>
+
+</html>
