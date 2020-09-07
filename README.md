@@ -58,5 +58,5 @@ El comando `mongoimport` permite importar un archivo JSON o CSV a una colección
 
 `mongoimport --db <dabataseName> --collection <collectionName> --file <fileName> [flags]`
 
-- El flag --jsonArray identifica un JSON con un array de objetos
-- El flag --drop vacía la colección previo a importar los nuevos datos
+- El flag `--jsonArray` identifica un JSON con un array de objetos
+- El flag `--drop` vacía la colección previo a importar los nuevos datos
